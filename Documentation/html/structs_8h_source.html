@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BMPLibrary: Исходный файл structs.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BMPLibrary
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Библиотека для работы с bmp-файлами</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">structs.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="structs_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STRUCTS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define STRUCTS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#pragma pack (push, 2)</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structbmfh.html">    5</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>bmfileheader {</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="structbmfh.html#adaefa585a14767d74cdedb0e3ff6daa3">    6</a></span>&#160;    <span class="keywordtype">char</span> bfType[2]; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="structbmfh.html#a99c44db833a458a7be8ddf4fe19f6ffa">    7</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structbmfh.html#a99c44db833a458a7be8ddf4fe19f6ffa">bfSize</a>; </div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structbmfh.html#a9ce3ee3eed878dbcdb448ffa8af238a4">    8</a></span>&#160;    <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="structbmfh.html#a9ce3ee3eed878dbcdb448ffa8af238a4">Reserved1</a>; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structbmfh.html#aba83bc97869084ffb03211a71016ff04">    9</a></span>&#160;    <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="structbmfh.html#aba83bc97869084ffb03211a71016ff04">Reserved2</a>; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structbmfh.html#a6d8ca1556d82055369b4a29a7ff158fb">   10</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structbmfh.html#a6d8ca1556d82055369b4a29a7ff158fb">OffBits</a>; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;} <a class="code" href="structbmfh.html">bmfh</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma pack(pop)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structbmih.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>bminfoheader {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="structbmih.html#a4d826e11c94868cb46a04c376998c85e">   15</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structbmih.html#a4d826e11c94868cb46a04c376998c85e">biSize</a>; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="structbmih.html#a35d635da4105b01b2d74f39622fc35f6">   16</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbmih.html#a35d635da4105b01b2d74f39622fc35f6">Width</a>; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structbmih.html#a9c12389df4ecfc88b353f05d58cbc320">   17</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbmih.html#a9c12389df4ecfc88b353f05d58cbc320">Height</a>; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="structbmih.html#a34e6801cd89e911c85525a0ed2128f1e">   18</a></span>&#160;    <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="structbmih.html#a34e6801cd89e911c85525a0ed2128f1e">Planes</a>; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structbmih.html#a9f2b08dbee672c9da1bd1f104124dbca">   19</a></span>&#160;    <span class="keywordtype">short</span> <span class="keywordtype">int</span> <a class="code" href="structbmih.html#a9f2b08dbee672c9da1bd1f104124dbca">BitCount</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="structbmih.html#abc9a891fbcf267af4bd088e247aac0cf">   20</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbmih.html#abc9a891fbcf267af4bd088e247aac0cf">Compression</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structbmih.html#a7676c1fdc4d75a1c35b60656570e3509">   21</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="structbmih.html#a7676c1fdc4d75a1c35b60656570e3509">SizeImage</a>; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structbmih.html#a3405faa578b168895a2607514a6f9469">   22</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbmih.html#a3405faa578b168895a2607514a6f9469">XPelsPerMeter</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="structbmih.html#a31347a819560c0ab99d02f069fa44d64">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbmih.html#a31347a819560c0ab99d02f069fa44d64">YPelsPerMeter</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structbmih.html#ad203d5da06f0b6b39b6d7be8d4ee37e9">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbmih.html#ad203d5da06f0b6b39b6d7be8d4ee37e9">ClrUsed</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structbmih.html#a6ced1f6898b2634e3c00a8c5ddb7a2b7">   25</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="structbmih.html#a6ced1f6898b2634e3c00a8c5ddb7a2b7">ClrImportant</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;} <a class="code" href="structbmih.html">bmih</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="structrgbq.html">   28</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>rgbquad {</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structrgbq.html#a34d70d15d836828bd92ece15cf7242d1">   29</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structrgbq.html#a34d70d15d836828bd92ece15cf7242d1">rgbBlue</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structrgbq.html#acda1183edf50eb439839e3a75c8b5549">   30</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structrgbq.html#acda1183edf50eb439839e3a75c8b5549">rgbGreen</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structrgbq.html#a2d6b70a30d7970c5452a624a5e38f3d2">   31</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structrgbq.html#a2d6b70a30d7970c5452a624a5e38f3d2">rgbRed</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structrgbq.html#abedcb313f8bb8c0e13689c8f8850b6d0">   32</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="structrgbq.html#abedcb313f8bb8c0e13689c8f8850b6d0">rgbReserved</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <a class="code" href="structrgbq.html">rgbq</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structbmp_file.html">   35</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>bmp {</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structbmp_file.html#a9d4365b4c361b3ef5d994220fb484dd4">   36</a></span>&#160;    <a class="code" href="structbmfh.html">bmfh</a> <a class="code" href="structbmp_file.html#a9d4365b4c361b3ef5d994220fb484dd4">bmFHeader</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structbmp_file.html#acaee65f96c0c723cbc6ca099dca1a9e1">   37</a></span>&#160;    <a class="code" href="structbmih.html">bmih</a> <a class="code" href="structbmp_file.html#acaee65f96c0c723cbc6ca099dca1a9e1">bmIHeader</a>; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="structbmp_file.html#a660c6ff33047739b21394c989b038a9c">   38</a></span>&#160;    <a class="code" href="structrgbq.html">rgbq</a> palette[256]; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structbmp_file.html#a8753c06fd3d4ca736b97bea2e0931723">   39</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>** <a class="code" href="structbmp_file.html#a8753c06fd3d4ca736b97bea2e0931723">scan</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <a class="code" href="structbmp_file.html">bmpFile</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="astructbmfh_html"><div class="ttname"><a href="structbmfh.html">bmfh</a></div><div class="ttdef"><b>Definition:</b> structs.h:5</div></div>
+<div class="ttc" id="astructbmfh_html_a6d8ca1556d82055369b4a29a7ff158fb"><div class="ttname"><a href="structbmfh.html#a6d8ca1556d82055369b4a29a7ff158fb">bmfh::OffBits</a></div><div class="ttdeci">unsigned int OffBits</div><div class="ttdoc">Смещение (в байтах) массива пикселов от начала файла</div><div class="ttdef"><b>Definition:</b> structs.h:10</div></div>
+<div class="ttc" id="astructbmfh_html_a99c44db833a458a7be8ddf4fe19f6ffa"><div class="ttname"><a href="structbmfh.html#a99c44db833a458a7be8ddf4fe19f6ffa">bmfh::bfSize</a></div><div class="ttdeci">unsigned int bfSize</div><div class="ttdoc">Размер всего bmp-файла в байтах</div><div class="ttdef"><b>Definition:</b> structs.h:7</div></div>
+<div class="ttc" id="astructbmfh_html_a9ce3ee3eed878dbcdb448ffa8af238a4"><div class="ttname"><a href="structbmfh.html#a9ce3ee3eed878dbcdb448ffa8af238a4">bmfh::Reserved1</a></div><div class="ttdeci">short int Reserved1</div><div class="ttdoc">Зарезервированное поле (=0)</div><div class="ttdef"><b>Definition:</b> structs.h:8</div></div>
+<div class="ttc" id="astructbmfh_html_aba83bc97869084ffb03211a71016ff04"><div class="ttname"><a href="structbmfh.html#aba83bc97869084ffb03211a71016ff04">bmfh::Reserved2</a></div><div class="ttdeci">short int Reserved2</div><div class="ttdoc">Зарезервированное поле (=0)</div><div class="ttdef"><b>Definition:</b> structs.h:9</div></div>
+<div class="ttc" id="astructbmih_html"><div class="ttname"><a href="structbmih.html">bmih</a></div><div class="ttdef"><b>Definition:</b> structs.h:14</div></div>
+<div class="ttc" id="astructbmih_html_a31347a819560c0ab99d02f069fa44d64"><div class="ttname"><a href="structbmih.html#a31347a819560c0ab99d02f069fa44d64">bmih::YPelsPerMeter</a></div><div class="ttdeci">int YPelsPerMeter</div><div class="ttdef"><b>Definition:</b> structs.h:23</div></div>
+<div class="ttc" id="astructbmih_html_a3405faa578b168895a2607514a6f9469"><div class="ttname"><a href="structbmih.html#a3405faa578b168895a2607514a6f9469">bmih::XPelsPerMeter</a></div><div class="ttdeci">int XPelsPerMeter</div><div class="ttdef"><b>Definition:</b> structs.h:22</div></div>
+<div class="ttc" id="astructbmih_html_a34e6801cd89e911c85525a0ed2128f1e"><div class="ttname"><a href="structbmih.html#a34e6801cd89e911c85525a0ed2128f1e">bmih::Planes</a></div><div class="ttdeci">short int Planes</div><div class="ttdoc">Количество цветовых плоскостей</div><div class="ttdef"><b>Definition:</b> structs.h:18</div></div>
+<div class="ttc" id="astructbmih_html_a35d635da4105b01b2d74f39622fc35f6"><div class="ttname"><a href="structbmih.html#a35d635da4105b01b2d74f39622fc35f6">bmih::Width</a></div><div class="ttdeci">int Width</div><div class="ttdoc">Ширина картинки в пикселах</div><div class="ttdef"><b>Definition:</b> structs.h:16</div></div>
+<div class="ttc" id="astructbmih_html_a4d826e11c94868cb46a04c376998c85e"><div class="ttname"><a href="structbmih.html#a4d826e11c94868cb46a04c376998c85e">bmih::biSize</a></div><div class="ttdeci">unsigned int biSize</div><div class="ttdoc">Размер структуры BITMAPINFOHEADER в байтах</div><div class="ttdef"><b>Definition:</b> structs.h:15</div></div>
+<div class="ttc" id="astructbmih_html_a6ced1f6898b2634e3c00a8c5ddb7a2b7"><div class="ttname"><a href="structbmih.html#a6ced1f6898b2634e3c00a8c5ddb7a2b7">bmih::ClrImportant</a></div><div class="ttdeci">int ClrImportant</div><div class="ttdef"><b>Definition:</b> structs.h:25</div></div>
+<div class="ttc" id="astructbmih_html_a7676c1fdc4d75a1c35b60656570e3509"><div class="ttname"><a href="structbmih.html#a7676c1fdc4d75a1c35b60656570e3509">bmih::SizeImage</a></div><div class="ttdeci">unsigned int SizeImage</div><div class="ttdoc">Размер массива пикселов в байтах</div><div class="ttdef"><b>Definition:</b> structs.h:21</div></div>
+<div class="ttc" id="astructbmih_html_a9c12389df4ecfc88b353f05d58cbc320"><div class="ttname"><a href="structbmih.html#a9c12389df4ecfc88b353f05d58cbc320">bmih::Height</a></div><div class="ttdeci">int Height</div><div class="ttdoc">Высота картинки в пикселах</div><div class="ttdef"><b>Definition:</b> structs.h:17</div></div>
+<div class="ttc" id="astructbmih_html_a9f2b08dbee672c9da1bd1f104124dbca"><div class="ttname"><a href="structbmih.html#a9f2b08dbee672c9da1bd1f104124dbca">bmih::BitCount</a></div><div class="ttdeci">short int BitCount</div><div class="ttdoc">Количество битов на 1 пиксел</div><div class="ttdef"><b>Definition:</b> structs.h:19</div></div>
+<div class="ttc" id="astructbmih_html_abc9a891fbcf267af4bd088e247aac0cf"><div class="ttname"><a href="structbmih.html#abc9a891fbcf267af4bd088e247aac0cf">bmih::Compression</a></div><div class="ttdeci">int Compression</div><div class="ttdef"><b>Definition:</b> structs.h:20</div></div>
+<div class="ttc" id="astructbmih_html_ad203d5da06f0b6b39b6d7be8d4ee37e9"><div class="ttname"><a href="structbmih.html#ad203d5da06f0b6b39b6d7be8d4ee37e9">bmih::ClrUsed</a></div><div class="ttdeci">int ClrUsed</div><div class="ttdef"><b>Definition:</b> structs.h:24</div></div>
+<div class="ttc" id="astructbmp_file_html"><div class="ttname"><a href="structbmp_file.html">bmpFile</a></div><div class="ttdef"><b>Definition:</b> structs.h:35</div></div>
+<div class="ttc" id="astructbmp_file_html_a8753c06fd3d4ca736b97bea2e0931723"><div class="ttname"><a href="structbmp_file.html#a8753c06fd3d4ca736b97bea2e0931723">bmpFile::scan</a></div><div class="ttdeci">unsigned char ** scan</div><div class="ttdoc">Растровая развертка изображения</div><div class="ttdef"><b>Definition:</b> structs.h:39</div></div>
+<div class="ttc" id="astructbmp_file_html_a9d4365b4c361b3ef5d994220fb484dd4"><div class="ttname"><a href="structbmp_file.html#a9d4365b4c361b3ef5d994220fb484dd4">bmpFile::bmFHeader</a></div><div class="ttdeci">bmfh bmFHeader</div><div class="ttdoc">Cтруктура заголовка bmp-файла</div><div class="ttdef"><b>Definition:</b> structs.h:36</div></div>
+<div class="ttc" id="astructbmp_file_html_acaee65f96c0c723cbc6ca099dca1a9e1"><div class="ttname"><a href="structbmp_file.html#acaee65f96c0c723cbc6ca099dca1a9e1">bmpFile::bmIHeader</a></div><div class="ttdeci">bmih bmIHeader</div><div class="ttdoc">Структура описания формата изображения</div><div class="ttdef"><b>Definition:</b> structs.h:37</div></div>
+<div class="ttc" id="astructrgbq_html"><div class="ttname"><a href="structrgbq.html">rgbq</a></div><div class="ttdef"><b>Definition:</b> structs.h:28</div></div>
+<div class="ttc" id="astructrgbq_html_a2d6b70a30d7970c5452a624a5e38f3d2"><div class="ttname"><a href="structrgbq.html#a2d6b70a30d7970c5452a624a5e38f3d2">rgbq::rgbRed</a></div><div class="ttdeci">char rgbRed</div><div class="ttdef"><b>Definition:</b> structs.h:31</div></div>
+<div class="ttc" id="astructrgbq_html_a34d70d15d836828bd92ece15cf7242d1"><div class="ttname"><a href="structrgbq.html#a34d70d15d836828bd92ece15cf7242d1">rgbq::rgbBlue</a></div><div class="ttdeci">char rgbBlue</div><div class="ttdef"><b>Definition:</b> structs.h:29</div></div>
+<div class="ttc" id="astructrgbq_html_abedcb313f8bb8c0e13689c8f8850b6d0"><div class="ttname"><a href="structrgbq.html#abedcb313f8bb8c0e13689c8f8850b6d0">rgbq::rgbReserved</a></div><div class="ttdeci">char rgbReserved</div><div class="ttdef"><b>Definition:</b> structs.h:32</div></div>
+<div class="ttc" id="astructrgbq_html_acda1183edf50eb439839e3a75c8b5549"><div class="ttname"><a href="structrgbq.html#acda1183edf50eb439839e3a75c8b5549">rgbq::rgbGreen</a></div><div class="ttdeci">char rgbGreen</div><div class="ttdef"><b>Definition:</b> structs.h:30</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

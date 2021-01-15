@@ -1,0 +1,5 @@
+<map id="swap" name="swap">
+<area shape="rect" id="node1" title="функция, которая меняет местами два элемента типа unsigned char." alt="" coords="195,5,247,32"/>
+<area shape="rect" id="node2" href="$flip_8cpp.html#a4edd79e29805f2796fdab0549d09f06d" title="функция отражения картинки" alt="" coords="108,5,147,32"/>
+<area shape="rect" id="node3" href="$rotate_8cpp.html#a7b6748a886717e5e4a35db20a4fcbc8d" title="функция поворота исходного изображения" alt="" coords="5,5,60,32"/>
+</map>

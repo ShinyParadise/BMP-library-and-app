@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BMPLibrary: Файл fileHandling.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BMPLibrary
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Библиотека для работы с bmp-файлами</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл fileHandling.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &quot;<a class="el" href="file_handling_8h_source.html">fileHandling.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для fileHandling.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="file_handling_8cpp__incl.png" border="0" usemap="#afile_handling_8cpp" alt=""/></div>
+<map name="afile_handling_8cpp" id="afile_handling_8cpp">
+<area shape="rect" title=" " alt="" coords="63,5,176,32"/>
+<area shape="rect" title=" " alt="" coords="33,80,99,107"/>
+<area shape="rect" href="file_handling_8h.html" title=" " alt="" coords="123,80,222,107"/>
+<area shape="rect" href="structs_8h.html" title=" " alt="" coords="5,155,79,181"/>
+<area shape="rect" title=" " alt="" coords="103,155,160,181"/>
+<area shape="rect" title=" " alt="" coords="184,155,244,181"/>
+<area shape="rect" title=" " alt="" coords="269,155,330,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:af08ec37a8c99d747fb60fa15bc28678b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_handling_8cpp.html#af08ec37a8c99d747fb60fa15bc28678b">_CRT_SECURE_NO_WARNINGS</a></td></tr>
+<tr class="separator:af08ec37a8c99d747fb60fa15bc28678b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a2c0d9713d8e52951869bfcbc82c97dc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structbmp_file.html">bmpFile</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_handling_8cpp.html#a2c0d9713d8e52951869bfcbc82c97dc8">readBMP</a> (int num)</td></tr>
+<tr class="memdesc:a2c0d9713d8e52951869bfcbc82c97dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция чтения bmp-файла  <a href="file_handling_8cpp.html#a2c0d9713d8e52951869bfcbc82c97dc8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a2c0d9713d8e52951869bfcbc82c97dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ea6d4cad7fa56883ecb360b3ec32dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="file_handling_8cpp.html#a45ea6d4cad7fa56883ecb360b3ec32dc">writeBMP</a> (int num, <a class="el" href="structbmp_file.html">bmpFile</a> *inBmp)</td></tr>
+<tr class="memdesc:a45ea6d4cad7fa56883ecb360b3ec32dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">функция записи bmp-файла  <a href="file_handling_8cpp.html#a45ea6d4cad7fa56883ecb360b3ec32dc">Подробнее...</a><br /></td></tr>
+<tr class="separator:a45ea6d4cad7fa56883ecb360b3ec32dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="af08ec37a8c99d747fb60fa15bc28678b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af08ec37a8c99d747fb60fa15bc28678b">&#9670;&nbsp;</a></span>_CRT_SECURE_NO_WARNINGS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _CRT_SECURE_NO_WARNINGS</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a2c0d9713d8e52951869bfcbc82c97dc8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0d9713d8e52951869bfcbc82c97dc8">&#9670;&nbsp;</a></span>readBMP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structbmp_file.html">bmpFile</a> readBMP </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>функция чтения bmp-файла </p>
+<p>читаемый файл имеет вид "input01.bmp", где 01 - его номер </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>номер файла </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Автор</dt><dd>Воронков И.С. </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>13.01.2021 </dd></dl>
+
+</div>
+</div>
+<a id="a45ea6d4cad7fa56883ecb360b3ec32dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ea6d4cad7fa56883ecb360b3ec32dc">&#9670;&nbsp;</a></span>writeBMP()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void writeBMP </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structbmp_file.html">bmpFile</a> *&#160;</td>
+          <td class="paramname"><em>inBmp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>функция записи bmp-файла </p>
+<p>записываем файл имеет вид "output01.bmp", где 01 - его номер </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">num</td><td>номер файла </td></tr>
+    <tr><td class="paramname">inBmp</td><td>bmp-структура для записи </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Автор</dt><dd>Воронков И.С. </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>13.01.2021 </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
