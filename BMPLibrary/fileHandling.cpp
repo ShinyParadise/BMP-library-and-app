@@ -14,15 +14,6 @@ bmpFile readBMP(int num) {
     fread(&input.bmIHeader, sizeof(bmih), 1, fin);
     fread(&input.palette, sizeof(input.palette), 1, fin);
 
-    assert(input.bmFHeader.Reserved1 == 0);
-    assert(input.bmFHeader.Reserved2 == 0);
-    assert(input.bmIHeader.BitCount == 8);
-    assert(input.bmIHeader.Compression  == 0);
-    assert(input.bmIHeader.ClrImportant == 0);
-    assert(input.bmIHeader.XPelsPerMeter == 0);
-    assert(input.bmIHeader.YPelsPerMeter == 0);
-    // для отключения ассертов необходимо прописать #define NDEBUG
-
     int width = input.bmIHeader.Width;
     int height = input.bmIHeader.Height;
 
@@ -34,7 +25,8 @@ bmpFile readBMP(int num) {
 
     input.scan = new unsigned char* [height]; // кол-во строк в растровой развертке (высота изобр)
     for (int i = 0; i < height; i++)
-        input.scan[i] = new unsigned char[RowSize](); // кол-во столбцов в растровой развертке (ширина изобр)
+        input.scan[i] = new unsigned char[RowSize](); // кол-во столбцов в растровой развертке \
+                                                      (ширина изобр)
 
     for (int i = 0; i < height; i++)
         for (int j = 0; j < RowSize; j++)
@@ -53,15 +45,6 @@ void writeBMP(int num, bmpFile* inBmp) {
     fwrite(&inBmp->bmFHeader, sizeof(bmfh), 1, fout);
     fwrite(&inBmp->bmIHeader, sizeof(bmih), 1, fout);
     fwrite(&inBmp->palette, sizeof(inBmp->palette), 1, fout);
-
-    assert(inBmp->bmFHeader.Reserved1 == 0);
-    assert(inBmp->bmFHeader.Reserved2 == 0);
-    assert(inBmp->bmIHeader.BitCount == 8);
-    assert(inBmp->bmIHeader.Compression == 0);
-    assert(inBmp->bmIHeader.ClrImportant == 0);
-    assert(inBmp->bmIHeader.XPelsPerMeter == 0);
-    assert(inBmp->bmIHeader.YPelsPerMeter == 0);
-    // для отключения ассертов необходимо прописать #define NDEBUG
 
     int height = inBmp->bmIHeader.Height;
     int width = inBmp->bmIHeader.Width;

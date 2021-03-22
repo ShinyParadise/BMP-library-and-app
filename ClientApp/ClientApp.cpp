@@ -1,7 +1,6 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #define strMAX 21
 #define fileMAX 100
-#define NDEBUG // чтобы включить ассерты необходимо закомментировать эту строчку
 
 
 #include "fileHandling.h"
